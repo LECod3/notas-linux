@@ -1,9 +1,9 @@
 # Guía de Comandos y Configuraciones
 <br>
-#Este repositorio contiene notas personales sobre:
+# Este repositorio contiene notas personales sobre:
 - Linux Ubuntu
 <hr>
-##Comandos Basicos
+## Comandos Basicos
 
 * ```pwd```: print working directory
 
