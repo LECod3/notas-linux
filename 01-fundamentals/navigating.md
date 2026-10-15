@@ -72,6 +72,15 @@ Breakdown (from left to right):
 - modification date/time
 - name
 
+Timestamp example:
+
+```text
+Nov 20 16:37   # recent file: month day hour:minute
+Nov 20  2024   # older file: month day  year
+```
+
+In most GNU `ls` outputs, files modified within the last six months show `Mon DD HH:MM`; older files show `Mon DD  YYYY`.
+
 ### Common pitfalls
 
 - Hidden files are invisible unless you use `-a`.
