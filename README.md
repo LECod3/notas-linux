@@ -1,67 +1,71 @@
-# Guía de Comandos y Configuraciones
-<br>
-# Este repositorio contiene notas personales sobre:
-- Linux Ubuntu
-<hr>
-## Comandos Basicos
+# Linux Notes
 
-* ```pwd```: print working directory
+Personal Linux notes focused on Ubuntu/Debian. This repository is structured as a small, practical knowledge base: fundamentals first, then system and networking skills up to an intermediate level.
 
-* ```cd``` (Change Directory)
-* ```.``` (directorio actual): Este es el directorio en el que te encuentras actualmente.
-* ```..``` (directorio superior): Te lleva al directorio por encima del directorio actual.
-* ```~``` (directorio personal): Este directorio apunta por defecto al “directorio personal” del usuario.
-* ```-``` (directorio anterior): Te lleva al directorio en el que estabas justo antes.
+## Learning path
 
-* ```ls``` (List Directories)
-* Ten en cuenta que no todos los archivos en un directorio serán visibles. Los nombres de archivo que empiezan con ```.``` están ocultos. Sin embargo, podés verlos con el comando ```ls``` usando la opción ```-a``` (a de "all", todos). ```ls -a```
+### Level 1: Fundamentals
 
-* También existe otra opción útil de ls: ```-l``` (long). Muestra una lista detallada de archivos en formato largo. Te mostrará información detallada, empezando por la izquierda: permisos del archivo, número de enlaces, nombre del propietario, grupo del propietario, tamaño del archivo, fecha y hora de la última modificación, y nombre del archivo/directorio. ```ls -l```
-* ```drwxr-x--- 7 pete penguingroup   4096 Nov 20 16:37 Desktop```
- 
-* Los comandos tienen cosas llamadas flags (o argumentos u opciones, como prefieras) para agregar más funcionalidad. Fijate que usamos ```-a``` y ```-l```; bueno, podés combinarlas con ```-la```. El orden de las flags determina en qué orden se aplican. La mayoría de las veces eso no importa, por lo que también podés escribir ```ls -al``` y seguirá funcionando. ```ls -la```
- 
-* ```touch``` (Crear archivo)
- 
-* ```file```
- 
-* ```cat```
- 
-* ```less```
- 
-* ```history``` 
-* Muestra el historial de comandos
- 
-* ```history -c``` 
-* Limpia el historial
- 
-* ```clear``` 
+- [Navigation basics](./01-fundamentals/navigating.md)
+- [Files and directories](./01-fundamentals/files-and-dirs.md)
+- [Permissions](./01-fundamentals/permissions.md)
+- [Help and manuals](./01-fundamentals/help-man.md)
 
-* ```cp``` (Copy)
- 
-* ```mv``` (Move)
- 
-* ```mkdir``` (Make Directory)
-* También podés crear subdirectorios al mismo tiempo con la opción ```-p``` (parent).
-* ```mkdir -p libros/hemmingway/favoritos```
- 
-* ```rmdir``` (Remove Directory) 
- 
-* ```rm``` (Remove)
-* La opción ```-f``` o force le indica a ```rm``` que elimine todos los archivos, estén o no protegidos contra escritura, sin pedir confirmación al usuario (siempre que tengas los permisos adecuados).
- 
-* ```find```
- 
-* ```help```
- 
-* ```man``` (Manual)
- 
-* ```whatis``` 
+### Level 2: Text and pipelines
 
-* ```alias```
- 
-* ```tldr``` (too long; don't read)
+- [Viewing files](./02-text-pipelines/viewing.md) (planned)
+- [Filtering](./02-text-pipelines/filtering.md) (planned)
+- [Transforming text](./02-text-pipelines/transforming.md) (planned)
+- [Redirections and pipes](./02-text-pipelines/redirections-pipes.md) (planned)
 
-* ```exit```
+### Level 3: Processes and system
 
-* ```logout```
+- [Processes](./03-processes-system/processes.md) (planned)
+- [systemd](./03-processes-system/systemd.md) (planned)
+- [Packages](./03-processes-system/packages.md) (planned)
+- [Storage](./03-processes-system/storage.md) (planned)
+
+### Level 4: Networking
+
+- [Basics](./04-networking/basics.md) (planned)
+- [HTTP tools](./04-networking/http.md) (planned)
+- [DNS and firewall](./04-networking/dns-firewall.md) (planned)
+
+### Level 5: Users and security
+
+- [Users and groups](./05-users-security/users-groups.md) (planned)
+- [SSH](./05-users-security/ssh.md) (planned)
+
+### Level 6: Shell basics
+
+- [Variables and environment](./06-shell-basics/variables-env.md) (planned)
+- [Control flow](./06-shell-basics/control-flow.md) (planned)
+- [Aliases and scripts](./06-shell-basics/aliases-scripts.md) (planned)
+
+## Extras
+
+- [Recipes](./recipes/README.md) (planned): scenario-based solutions
+- [Exercises](./exercises/basic.md) (planned): practice tasks
+- [Cheatsheets](./cheatsheets/permissions-octal.md) (planned): quick reference
+- [Dangerous commands](./cheatsheets/dangerous-commands.md) (planned): what not to do
+
+## How to use this repository
+
+Read topics in order for a solid foundation, or jump to a recipe when you need to solve a real task. Each document includes examples and common pitfalls.
+
+## Prerequisites
+
+- Ubuntu or Debian-based system
+- Access to a terminal
+- A non-root user with `sudo` when needed
+
+## Resources
+
+- `man <command>`
+- `tldr <command>`
+- [ExplainShell](https://explainshell.com)
+- [Linux Journey](https://linuxjourney.com)
+
+## Warning
+
+Some commands are destructive. Read the "Common pitfalls" and "Safety notes" sections before running unfamiliar commands in production or on important data.
