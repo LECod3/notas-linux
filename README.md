@@ -15,7 +15,7 @@ Personal Linux notes focused on Ubuntu/Debian. This repository is structured as 
 
 - [Viewing files](./02-text-pipelines/viewing.md)
 - [Filtering](./02-text-pipelines/filtering.md)
-- [Transforming text](./02-text-pipelines/transforming.md) (planned)
+- [Transforming text](./02-text-pipelines/transforming.md)
 - [Redirections and pipes](./02-text-pipelines/redirections-pipes.md) (planned)
 
 ### Level 3: Processes and system
